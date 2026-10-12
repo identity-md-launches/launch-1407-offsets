@@ -1,0 +1,24 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "OffsetsToken",
+    "name": "Offsets",
+    "symbol": "OFFSETS",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "economics": {
+    "poolBps": 8000,
+    "initialMarketCapWei": "2500000000000000000000",
+    "remainderTo": "0xd6302976e590b9b947da8774b7f1246164e0ce98"
+  },
+  "notes": "OffsetsToken is a fixed-supply ERC-20 named Offsets (OFFSETS) with 18 decimals. Its argument-free constructor mints all 1,000,000,000 tokens once to msg.sender, the factory at launch. It has no further minting, burning, transfer fees or privileged controls. No application contracts are deployed. pool.initialPrice records provenance only; the opening price is derived from economics.initialMarketCapWei and the token supply."
+}
